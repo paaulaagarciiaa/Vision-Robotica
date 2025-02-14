@@ -3,10 +3,12 @@ layout: default
 title: Mi Blog
 ---
 
-<div style="display: flex; align-items: center; gap: 15px;">
-    <img src="/logorobotica.png" alt="Visión Robótica" width="50" height="50">
-    <span style="font-size: 26px; font-weight: bold;">¡Bienvenido a mi blog de Visión Robótica!</span>
-</div>
+<table>
+  <tr>
+    <td><img src="/logorobotica.png" alt="Visión Robótica" width="50" height="50"></td>
+    <td><h1 style="margin: 0; font-size: 26px;">¡Bienvenido a mi blog de Visión Robótica!</h1></td>
+  </tr>
+</table>
 
 ## Últimos posts
 {% for post in site.posts %}
