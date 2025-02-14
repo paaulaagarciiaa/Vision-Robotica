@@ -1,3 +1,9 @@
+<div style="display: flex; align-items: center;">
+    <img src="/logorobotica.png" alt="Visión Robótica" width="50" height="50" style="margin-right: 10px;">
+    <h1 style="margin: 0;">Visión Robótica</h1>
+</div>
+
+
 ---
 layout: default
 title: Mi Blog
