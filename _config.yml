@@ -3,7 +3,7 @@ title: "Visión Robótica"
 author: "Paula García Rodríguez"
 
 # 🔹 Tema de GitHub Pages (elige uno)
-theme: jekyll-theme-merlot  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
+theme: jekyll-theme-minimal  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
 
 # 🔹 Plugins adicionales
 plugins:
