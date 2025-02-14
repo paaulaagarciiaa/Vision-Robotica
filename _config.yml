@@ -1,6 +1,8 @@
 # Configuración del blog en GitHub Pages
 title: "Visión Robótica"
 author: "Paula García Rodríguez"
+header:
+  overlay_image: "/logorobotica.png"
 
 # 🔹 Tema de GitHub Pages (elige uno)
 theme: jekyll-theme-minimal  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
@@ -18,5 +20,3 @@ show_excerpts: true  # Muestra resúmenes de posts en la página principal
 markdown: kramdown
 highlighter: rouge  # Resaltado de código en posts
 
-header:
-  overlay_image: "/logorobotica.png"
