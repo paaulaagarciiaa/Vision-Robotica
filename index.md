@@ -3,9 +3,9 @@ layout: default
 title: Mi Blog
 ---
 
-<div style="display: flex; align-items: center;">
-    <img src="/logorobotica.png" alt="Visión Robótica" width="50" height="50" style="margin-right: 10px;">
-    <h1 style="margin: 0;">¡Bienvenido a mi blog de Visión Robótica!</h1>
+<div style="display: flex; align-items: center; gap: 15px;">
+    <img src="/logorobotica.png" alt="Visión Robótica" width="50" height="50">
+    <span style="font-size: 26px; font-weight: bold;">¡Bienvenido a mi blog de Visión Robótica!</span>
 </div>
 
 ## Últimos posts
