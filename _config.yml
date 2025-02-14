@@ -17,3 +17,6 @@ show_excerpts: true  # Muestra resúmenes de posts en la página principal
 # 🔹 Configuración Avanzada
 markdown: kramdown
 highlighter: rouge  # Resaltado de código en posts
+
+header:
+  overlay_image: "/logorobotica.png"
