@@ -5,7 +5,7 @@ header:
   overlay_image: "/logorobotica.png"
 
 # 🔹 Tema de GitHub Pages (elige uno)
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
   # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
 
 # 🔹 Plugins adicionales
