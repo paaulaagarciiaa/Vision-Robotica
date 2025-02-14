@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Mi Blog
+header:
+  overlay_image: "/logorobotica.png"
 ---
 
 # ¡Bienvenido a mi blog de Visión Robótica!
