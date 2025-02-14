@@ -4,7 +4,7 @@ description: "Un blog sobre visión robótica"
 author: "Paaulaagarciiaa"
 
 # 🔹 Tema de GitHub Pages (elige uno)
-theme: jekyll-theme-cayman  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
+theme: jekyll-theme-minimal  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
 
 # 🔹 Plugins adicionales
 plugins:
