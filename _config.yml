@@ -1,0 +1,25 @@
+# Configuración del blog en GitHub Pages
+title: "Visión Robótica"
+description: "Un blog sobre visión robótica"
+author: "Paaulaagarciiaa"
+
+# 🔹 Tema de GitHub Pages (elige uno)
+theme: jekyll-theme-cayman  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
+
+# 🔹 Plugins adicionales
+plugins:
+  - jekyll-feed  # Agrega un feed RSS
+  - jekyll-seo-tag  # Mejora el SEO
+
+# 🔹 Configuración de Posts
+permalink: /:year/:month/:day/:title/
+show_excerpts: true  # Muestra resúmenes de posts en la página principal
+
+# 🔹 Configuración Avanzada
+markdown: kramdown
+highlighter: rouge  # Resaltado de código en posts
+
+# 🔹 Información de Contacto (Opcional)
+social_links:
+  github: paaulaagarciiaa
+  twitter: tu_usuario_twitter
