@@ -1,7 +1,6 @@
 # Configuración del blog en GitHub Pages
 title: "Visión Robótica"
-description: "Un blog sobre visión robótica"
-author: "Paaulaagarciiaa"
+author: "Paula García Rodríguez"
 
 # 🔹 Tema de GitHub Pages (elige uno)
 theme: jekyll-theme-minimal  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
@@ -18,8 +17,3 @@ show_excerpts: true  # Muestra resúmenes de posts en la página principal
 # 🔹 Configuración Avanzada
 markdown: kramdown
 highlighter: rouge  # Resaltado de código en posts
-
-# 🔹 Información de Contacto (Opcional)
-social_links:
-  github: paaulaagarciiaa
-  twitter: tu_usuario_twitter
