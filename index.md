@@ -4,7 +4,7 @@ title: Mi Blog
 ---
 
 <div style="display: flex; align-items: center;">
-    <img src="/logorobotica.png" alt="Visión Robótica" width="80" height="80" style="margin-right: 20px;">
+    <img src="/logorobotica.png" alt="Visión Robótica" width="40" height="40" style="margin-right: 20;">
     <h1 style="margin: 0;">¡Bienvenido a mi blog de Visión Robótica!</h1>
 </div>
 
