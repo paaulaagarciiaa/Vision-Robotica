@@ -10,6 +10,7 @@ title: Mi Blog
     </td>
     <td>
       <h1 style="margin: 0; font-size: 26px;">¡Bienvenido a mi blog de Visión Robótica!</h1>
+      <p><strong>Por {{ site.author }}</strong></p>  <!-- Aquí se muestra el autor -->
     </td>
   </tr>
 </table>
@@ -20,5 +21,3 @@ title: Mi Blog
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
-
-
