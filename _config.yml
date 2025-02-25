@@ -5,8 +5,7 @@ author: "Paula García Rodríguez"
 theme: jekyll-theme-minimal
 github:
   is_project_page: false
-footer: false
-footer_text: "© 2025 Visión Robótica. Desarrollado por Paula García Rodríguez."
+  footer: false
 
 # 🔹 Plugins adicionales
 plugins:
