@@ -28,7 +28,7 @@ title: Mi Blog
   }
 </style>
 
-<footer style="text-align: center; margin-top: 20px;">
+<footer style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">
   <p>© 2025 Visión Robótica. Todos los derechos reservados.</p>
 </footer>
 
