@@ -15,6 +15,8 @@ title: Mi Blog
 </table>
 
 ## PRÁCTICA 1: Visual Follow Line
+<img src="{{ '/f1.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 300px; height: auto;">
+
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
