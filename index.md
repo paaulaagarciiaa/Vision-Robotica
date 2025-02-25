@@ -22,11 +22,6 @@ title: Mi Blog
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
-<style>
-  footer {
-    display: none !important;  /* Oculta el footer predeterminado */
-  }
-</style>
 
 {% include footer.html %}
 
