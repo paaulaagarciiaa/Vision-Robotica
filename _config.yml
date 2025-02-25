@@ -1,10 +1,8 @@
-# Configuración del blog en GitHub Pages
 title: "Visión Robótica"
 author: "Paula García Rodríguez"
 
-# 🔹 Tema de GitHub Pages (elige uno)
+# 🔹 Tema de GitHub Pages
 theme: jekyll-theme-minimal
-  # Otros: jekyll-theme-minimal, jekyll-theme-merlot, etc.
 
 # 🔹 Plugins adicionales
 plugins:
@@ -13,9 +11,10 @@ plugins:
 
 # 🔹 Configuración de Posts
 permalink: /:year/:month/:day/:title/
-show_excerpts: true  # Muestra resúmenes de posts en la página principal
 
 # 🔹 Configuración Avanzada
 markdown: kramdown
 highlighter: rouge  # Resaltado de código en posts
 
+# 🔹 Desactivar enlaces de GitHub
+show_github_link: false
