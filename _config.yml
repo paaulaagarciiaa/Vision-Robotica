@@ -5,8 +5,7 @@ author: "Paula García Rodríguez"
 theme: jekyll-theme-minimal
 github:
   is_project_page: false
-  footer: false
-
+  
 # 🔹 Plugins adicionales
 plugins:
   - jekyll-feed  # Agrega un feed RSS
@@ -19,5 +18,3 @@ permalink: /:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge  # Resaltado de código en posts
 
-# 🔹 Desactivar enlaces de GitHub
-show_github_link: false
