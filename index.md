@@ -21,3 +21,14 @@ title: Mi Blog
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
+
+<style>
+  footer {
+    display: none !important;  /* Oculta el footer predeterminado */
+  }
+</style>
+
+<footer style="text-align: center; margin-top: 20px;">
+  <p>© 2025 Visión Robótica. Todos los derechos reservados.</p>
+</footer>
+
