@@ -18,3 +18,8 @@ highlighter: rouge  # Resaltado de código en posts
 
 # 🔹 Desactivar enlaces de GitHub
 show_github_link: false
+
+<footer>
+  <p>© 2025 Visión Robótica. Paula García Rodríguez.</p>
+</footer>
+
