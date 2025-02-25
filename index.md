@@ -22,6 +22,11 @@ title: Mi Blog
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
+<style>
+  body > div:last-of-type {
+    display: none !important; /* Oculta el footer de GitHub Pages */
+  }
+</style>
 
 {% include footer.html %}
 
