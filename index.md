@@ -14,7 +14,7 @@ title: Mi Blog
   </tr>
 </table>
 
-## Últimos posts
+## PRÁCTICA 1: Visual Follow Line
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
