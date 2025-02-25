@@ -3,6 +3,9 @@ author: "Paula García Rodríguez"
 
 # 🔹 Tema de GitHub Pages
 theme: jekyll-theme-minimal
+github:
+  is_project_page: false
+
 
 # 🔹 Plugins adicionales
 plugins:
