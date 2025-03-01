@@ -31,4 +31,8 @@
 # Sin modificar el código, el coche ackerman es capaz de dar la vuelta entera, tardando aproximadamente algo más de 2 minutos y medio, y 
 # oscilando mucho más en las rectas, podemos ver que es un coche más nerviso.
 
-# Para que el coche vibre menos una idea es meter una banda muerta, para evitar que el coche reaccione a pequeñas variaciones en el error
+# Para que el coche vibre menos una idea es meter una banda muerta, para evitar que el coche reaccione a pequeñas variaciones en el error.
+# Metíendole la banda muerta de 0.07 oscila un poco menos en rectas (aunque sigue oscilando), pero hay veces que se acaba chocando,
+# va el coche un poco sin control.
+
+
