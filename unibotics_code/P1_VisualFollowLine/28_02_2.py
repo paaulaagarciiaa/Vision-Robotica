@@ -1,4 +1,5 @@
-#intento con cambio de visualización, ahora visualiza dos líneas con el contorno de la línea roja
+# ahora visualiza dos líneas con el contorno de la línea roja y una línea verde, para ver que es lo que está siguiendo el coche en todo momento
+# con este código consigo que me tarde en hacer en circuito normal en unos 50 segundos, aunque sigue oscilando en las curvas
 
 from HAL import HAL
 from GUI import GUI
@@ -6,20 +7,17 @@ import cv2
 import numpy as np
 
 # **Velocidades**
-V_max = 30.0  # Velocidad en rectas
-V_min = 6.0   # Velocidad mínima en curvas suaves
-V_freno = 4.0  # Velocidad cuando detecta curva fuerte
+V_max = 20.0  # Velocidad en rectas
+V_min = 4.0   # Velocidad mínima en curvas cerradas
+V_freno = 3.5  # Velocidad cuando detecta curva fuerte
 
-# **PID para el giro (ajustado para reducir oscilaciones)**
-Kp_w = 1.6   
-Kd_w = 1.2   # Reducido de 1.7 a 1.2 para evitar sobrecorrecciones
-Ki_w = 0.000  
+# **PID para el giro**
+Kp_w = 1.8   # Aumentamos la corrección en curvas
+Kd_w = 2.5   # Mayor amortiguación para evitar oscilaciones
+Ki_w = 0.000  # Eliminamos el parámetro integral (I) porque no es útil
 
 # **Límite de giro**
-W_max = 3.0  
-
-# **Umbral de error para evitar oscilaciones innecesarias**
-error_threshold = 0.05  # No corregir si el error es menor que este valor
+W_max = 3.0  # Aumentamos el límite de giro para ayudar en curvas cerradas
 
 # **Detección de la línea roja**
 def detect_red_line(image):
@@ -37,19 +35,19 @@ def detect_red_line(image):
 
     # **Recortar la imagen (evitar ruido en la parte superior e inferior)**
     height = mask.shape[0]
-    mask[:height // 2, :] = 0  
-    mask[-height // 4:, :] = 0  
+    mask[:height // 2, :] = 0  # Eliminar parte superior
+    mask[-height // 4:, :] = 0  # Eliminar parte inferior
 
     return mask
 
-# **Cálculo del error con punto adelantado y visualización**
-def calculate_error(mask, image):
+# **Cálculo del error con punto adelantado**
+def calculate_error(mask, frame):
     width = mask.shape[1]
 
     # **Encontrar contornos**
     contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     if len(contours) == 0:
-        return None  
+        return None  # No se detectó la línea
 
     # **Escoger contorno más grande**
     largest_contour = max(contours, key=cv2.contourArea)
@@ -59,24 +57,24 @@ def calculate_error(mask, image):
     if moments["m00"] > 0:
         cx_center = int(moments["m10"] / moments["m00"])
     else:
-        cx_center = width // 2  
+        cx_center = width // 2  # Si falla, asumir el centro de la imagen
 
     # **Punto adelantado (más arriba en la imagen)**
     farthest_point = min(largest_contour, key=lambda p: p[0][1])
     cx_far = farthest_point[0][0]
-    cy_far = farthest_point[0][1]  
 
-    # **Ponderamos 70% el punto adelantado y 30% el centroide**
-    cx = int(0.7 * cx_far + 0.3 * cx_center)
+    # **Ponderamos 95% el punto adelantado y 5% el centroide**
+    cx = int(0.95 * cx_far + 0.05 * cx_center)
 
     # **Calcular el error normalizado [-1, 1]**
     error = (cx - width // 2) / (width // 2)
 
-    # **Visualización: Dibujar contornos y puntos de referencia**
-    cv2.drawContours(image, [largest_contour], -1, (0, 255, 0), 2)  
-    cv2.circle(image, (cx_far, cy_far), 5, (0, 255, 0), -1)  
-    cv2.circle(image, (cx_center, cy_far), 5, (255, 0, 0), -1)  
-    cv2.line(image, (width // 2, cy_far - 20), (width // 2, cy_far + 20), (0, 255, 0), 2)  
+    # **Dibujar la línea verde detectada**
+    cv2.drawContours(frame, [largest_contour], -1, (0, 255, 0), 2)  # Contorno verde
+    cv2.circle(frame, (cx, farthest_point[0][1]), 5, (0, 255, 0), -1)  # Punto verde en la línea
+
+    # **Dibujar línea verde desde el centro de la imagen hasta el punto detectado**
+    cv2.line(frame, (width // 2, frame.shape[0]), (cx, farthest_point[0][1]), (0, 255, 0), 2)
 
     return error
 
@@ -86,38 +84,33 @@ previous_error_w = 0
 while True:
     image = HAL.getImage()
     mask = detect_red_line(image)
-    error = calculate_error(mask, image)
+    error = calculate_error(mask, image)  # Ahora pasa la imagen para visualizar
 
     if error is not None:
         abs_error = abs(error)
 
-        # **Aplicar umbral: Evitar correcciones innecesarias**
-        if abs_error > error_threshold:
-            derivative_w = error - previous_error_w
-            correction_w = Kp_w * error + Kd_w * derivative_w
-            correction_w = max(-W_max, min(W_max, correction_w))
-            HAL.setW(-correction_w)
+        # **Velocidad adaptativa: más baja en curvas cerradas**
+        if abs_error > 0.3:
+            velocidad = V_freno  # Si el error es alto, frenar más
         else:
-            HAL.setW(0)  # Mantener el coche estable en línea recta
-
-        # **Velocidad adaptativa**
-        if abs_error > 0.3:  
-            velocidad = V_freno  
-        elif abs_error > 0.1:  
-            velocidad = V_min + (V_max - V_min) * (1 - abs_error / 0.3)
-        else:  
-            velocidad = V_max  
+            velocidad = V_max - (abs_error * (V_max - V_min))
 
         velocidad = max(V_min, min(V_max, velocidad))
         HAL.setV(velocidad)
 
-        # **Actualizar error anterior**
+        # **PID para el giro**
+        derivative_w = error - previous_error_w
+        correction_w = Kp_w * error + Kd_w * derivative_w
+
+        # **Límite de giro**
+        correction_w = max(-W_max, min(W_max, correction_w))
+        HAL.setW(-correction_w)
+
+        # **Actualizar errores previos**
         previous_error_w = error
 
     else:
-        # **Si se pierde la línea, hacer una búsqueda más progresiva**
-        HAL.setV(V_min)
-        HAL.setW(-2.0 if previous_error_w > 0 else 2.0)  # Antes era -3.0 y 3.0
+        # **Si se pierde la línea, girar agresivamente en la última dirección conocida**
+        HAL.setW(-3.0 if previous_error_w > 0 else 3.0)
 
-    # **Mostrar imagen con visualización**
     GUI.showImage(image)
