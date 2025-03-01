@@ -1,4 +1,4 @@
-# Paula García 1 de marzo: Adaptación del control al coche Ackermann
+# Paula García 1 de marzo --> Adaptación del control al coche Ackermann
 
 # Objetivo:
 # Se busca adaptar el código para que el coche Ackermann complete el mismo circuito en aproximadamente 50 segundos, 
@@ -34,5 +34,7 @@
 # Para que el coche vibre menos una idea es meter una banda muerta, para evitar que el coche reaccione a pequeñas variaciones en el error.
 # Metíendole la banda muerta de 0.07 oscila un poco menos en rectas (aunque sigue oscilando), pero hay veces que se acaba chocando,
 # va el coche un poco sin control.
+
+# También he probado en ponerle un umbral al valor absoluto
 
 
