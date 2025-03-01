@@ -1,9 +1,10 @@
+# Probando distintos parámetros para tener menos oscilaciones e ir más rápido
+
 from HAL import HAL
 from GUI import GUI
 import cv2
 import numpy as np
 
-# **Velocidad Máxima y Mínima**
 V_max = 15.0  # Velocidad en rectas
 V_min = 3.0   # Velocidad en curvas cerradas
 V_freno = 5.5  # Velocidad cuando detecta curva fuerte
