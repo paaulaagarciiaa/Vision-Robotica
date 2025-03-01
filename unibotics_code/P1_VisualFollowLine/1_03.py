@@ -27,3 +27,8 @@
 #   que introduce cierto retraso en la respuesta del giro.
 # - El PID está sobrecorrigiendo en rectas, posiblemente porque el coche reacciona con cierto retraso y las pequeñas 
 #   variaciones en la dirección se amplifican a altas velocidades. Se debe ajustar `Kd` para amortiguar estos efectos.
+
+# Sin modificar el código, el coche ackerman es capaz de dar la vuelta entera, tardando aproximadamente algo más de 2 minutos y medio, y 
+# oscilando mucho más en las rectas, podemos ver que es un coche más nerviso.
+
+# Para que el coche vibre menos una idea es meter una banda muerta, para evitar que el coche reaccione a pequeñas variaciones en el error
