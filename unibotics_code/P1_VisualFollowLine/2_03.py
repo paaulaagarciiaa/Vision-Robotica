@@ -1,4 +1,4 @@
-#Mejorando tiempo coche ackerman
+#Mejorando tiempo coche ackerman 88 segundos circuito simple
 
 
 from HAL import HAL
