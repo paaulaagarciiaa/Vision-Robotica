@@ -1,5 +1,4 @@
-#Mejorando tiempo coche ackerman 88 segundos circuito simple
-
+#Mejorando tiempo coche ackerman 180 segundos circuito simple
 
 from HAL import HAL
 from GUI import GUI
@@ -7,9 +6,9 @@ import cv2
 import numpy as np
 
 # **Velocidades optimizadas**
-V_max = 7.0   # Velocidad en rectas
-V_min = 3.5    # Velocidad mínima en curvas cerradas
-V_freno = 2.0  # Velocidad en curvas cerradas
+V_max = 17.0   # Velocidad en rectas
+V_min = 4.5    # Velocidad mínima en curvas cerradas
+V_freno = 2.5  # Velocidad en curvas cerradas
 
 # **PID para el giro**
 Kp_w = 1.2     # Corrección más suave en curvas
