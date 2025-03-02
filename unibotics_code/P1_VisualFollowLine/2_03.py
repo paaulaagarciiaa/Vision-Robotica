@@ -1,4 +1,4 @@
-#Mejorando tiempo coche ackerman 180 segundos circuito simple
+#Mejorando tiempo coche ackerman 180 segundos circuito simple (hay que mejorar tiempo)
 
 from HAL import HAL
 from GUI import GUI
