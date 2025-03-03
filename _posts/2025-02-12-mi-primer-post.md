@@ -11,4 +11,7 @@ Lo primero fue procesar la imagen que captura la cámara del coche. Convertí la
 <img src="mask.png" alt="Máscara detección línea roja" width="100">
 <p><em>Figura 1: Máscara detección línea roja.</em></p>
 
+<img src="{{ '/mask.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 200px; height: auto;">
+
+
 
