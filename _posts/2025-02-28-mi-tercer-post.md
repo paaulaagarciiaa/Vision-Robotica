@@ -19,7 +19,10 @@ Para entender mejor qué está detectando el coche y cómo está tomando decisio
 <img src="{{ '/imagenes/dia3.png' | relative_url }}" alt="Nueva visualización" width="600">
 <p><em>Figura 1: Visualización de contornos, líneas y punto verde para depuración.</em></p>
 
+El coche holonómico ahora completa el circuito en 40 segundos, muchísimo más rápido que en versiones anteriores. Aunque sigue habiendo algo de oscilación en las curvas, el rendimiento ha mejorado bastante y el coche es mucho más eficiente en la pista (ver Figura2).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XcsPPe5625A" frameborder="0" allowfullscreen></iframe>
+<p><em>Figura 2: Visualización coche holonómico recorriendo el circuito simple en 40 segundos.</em></p>
+
 
 
