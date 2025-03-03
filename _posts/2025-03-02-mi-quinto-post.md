@@ -15,5 +15,5 @@ Ahora el PID se ajusta según si el coche está en una curva o en una recta, alg
 Para que el coche no haga giros bruscos, aumenté el suavizado del giro a 0.6 (correction_w), así las correcciones son más progresivas. También hice que el límite de giro máximo (W_max) cambie según la situación: en rectas se mantiene igual, pero en curvas aumenta un 30% para que pueda girar mejor sin quedarse corto. Con esto, el coche toma mejor las curvas sin hacer correcciones demasiado agresivas en rectas.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SkMLvX-J-no" frameborder="0" allowfullscreen></iframe>
-<p><em>Figura 1: Visualización del coche Ackermann recorriendo el circuito simple (180 segundos).</em></p>
+<p><em>Figura 1: Visualización del coche Ackermann recorriendo el circuito simple en 180 segundos (velocidad x4).</em></p>
 
