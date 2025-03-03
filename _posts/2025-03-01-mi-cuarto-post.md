@@ -16,6 +16,7 @@ Un problema grave que apareció en esta versión es que el coche a veces se gira
 - Pierde la línea y toma una dirección incorrecta.
 - El PID hace una corrección excesiva y el coche gira más de la cuenta.
 - En algunas situaciones, el coche rebota contra un obstáculo y cambia completamente de dirección.
+  
 En estos casos, el coche deja de seguir la trayectoria correcta y empieza a moverse en sentido opuesto, lo que hace que se vuelva incontrolable y acabe chocando.
 
 Por ahora, el coche no es capaz de completar la vuelta entera con este código. Sigue siendo demasiado inestable en rectas y no corrige bien cuando pierde la trayectoria (ver Figura 1).
