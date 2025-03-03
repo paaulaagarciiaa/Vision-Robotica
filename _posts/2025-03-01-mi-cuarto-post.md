@@ -21,7 +21,7 @@ En estos casos, el coche deja de seguir la trayectoria correcta y empieza a move
 Por ahora, el coche no es capaz de completar la vuelta entera con este código. Sigue siendo demasiado inestable en rectas y no corrige bien cuando pierde la trayectoria (ver Figura 1).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aOyMU9rRIx8" frameborder="0" allowfullscreen></iframe>
-<p><em>Figura 1: Visualización del coche Ackermann recorriendo el circuito simple. El coche acaba chocándose y girando en sentido contrario.</em></p>
+<p><em>Figura 1: Visualización del coche Ackermann recorriendo el circuito simple (velocidad x4). El coche acaba chocándose y girando en sentido contrario.</em></p>
 
 
 
