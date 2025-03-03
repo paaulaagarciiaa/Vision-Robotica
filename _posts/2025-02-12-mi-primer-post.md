@@ -8,3 +8,6 @@ Para esta práctica, el coche de Fórmula 1 debe recorrer un circuito siguiendo 
 
 Lo primero fue procesar la imagen que captura la cámara del coche. Convertí la imagen a HSV para filtrar los tonos rojos y así detectar la línea, también recorté la imagen para eliminar ruido y evitar que el coche detecte elementos irrelevantes del entorno. 
 
+![Máscara detección línea roja](mask.png)
+
+
