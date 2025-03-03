@@ -6,7 +6,7 @@ categories: blog
 
 Para esta práctica, el coche de Fórmula 1 debe recorrer un circuito siguiendo una línea roja. Al principio, me centré en entender el problema y en cómo hacer que el coche pudiera detectar y seguir la línea correctamente.
 
-El primer paso fue procesar la imagen capturada por la cámara del coche. Para ello, convertí la imagen de BGR a HSV, lo que facilita la identificación de la línea roja. Usé dos rangos de color en HSV para detectar los tonos rojos, combinando ambas máscaras binarias en una única imagen. Para reducir el ruido y evitar detecciones erróneas, recorté la parte superior e inferior de la imagen, manteniendo solo la región más relevante donde se encuentra la línea roja en la pista.
+El primer paso fue procesar la imagen capturada por la cámara del coche. Para ello, convertí la imagen de BGR a HSV, lo que facilita la identificación de la línea roja. Usé dos rangos de color en HSV para detectar los tonos rojos, combinando ambas máscaras binarias en una única imagen. Para reducir el ruido y evitar detecciones erróneas, recorté la parte superior e inferior de la imagen, manteniendo solo la región más relevante donde se encuentra la línea roja en la pista (ver Figura 1).
 
 <img src="{{ '/imagenes/mask.png' | relative_url }}" alt="Máscara detección línea roja" width="600">
 <p><em>Figura 1: Máscara detección línea roja.</em></p>
