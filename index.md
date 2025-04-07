@@ -18,6 +18,9 @@ title: Mi Blog
 ## PRÁCTICA 1: Visual Follow Line
 <img src="{{ '/f1.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 200px; height: auto;">
 
+<details>
+<summary><strong>Ver entradas de esta práctica</strong></summary>
+
 {% for post in site.posts reversed %}
   {% if post.tags contains "practica1" %}
 - [{{ post.title }}]({{ post.url | relative_url }})
