@@ -18,7 +18,7 @@ title: Mi Blog
 ## PRÁCTICA 1: Visual Follow Line
 <img src="{{ '/f1.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 200px; height: auto;">
 
-## PRÁCTICA 3: 3D Reconstruction
+## PRÁCTICA 2: 3D Reconstruction
 <img src="{{ '/3d_reconstruction.png' | relative_url }}" alt="Imagen de la práctica 2" style="width: 200px; height: auto;">
 
 
