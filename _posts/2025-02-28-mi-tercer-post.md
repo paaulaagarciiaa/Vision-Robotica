@@ -2,6 +2,7 @@
 title: "DÍA 3"
 date: 2025-02-28
 categories: blog
+tags: [practica1]
 ---
 
 Mi objetivo era hacer que el coche fuera más rápido y estable sin perder precisión en las curvas. Hasta ahora, conseguía completar el circuito sin problemas, pero todavía tardaba demasiado en dar la vuelta completa. Para mejorar esto, hice varios ajustes en la velocidad, el control de giro y el cálculo del error.
