@@ -2,6 +2,7 @@
 title: "DÍA 5"
 date: 2025-03-02
 categories: blog
+tags: [practica1]
 ---
 
 En esta versión he conseguido que finalmente pueda dar la vuelta entera, sin embargo, aunque ya no se choca ni gira en sentido contrario, tarda 3 minutos en completar el recorrido, lo que sigue siendo demasiado lento (ver Figura 1).
