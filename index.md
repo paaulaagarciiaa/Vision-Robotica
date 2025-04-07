@@ -27,6 +27,9 @@ title: Mi Blog
   {% endif %}
 {% endfor %}
 
+</details>
+
+
 ## PRÁCTICA 2: 3D Reconstruction
 <img src="{{ '/3d_reconstruction.png' | relative_url }}" alt="Imagen de la práctica 2" style="width: 200px; height: auto;">
 
