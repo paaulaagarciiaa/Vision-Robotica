@@ -20,7 +20,7 @@ title: Mi Blog
 
 
 <details>
-<summary><strong>Ver entradas de esta práctica</strong></summary>
+<summary><strong>Ver entradas P1</strong></summary>
 
 <ul>
 {% for post in site.posts reversed %}
@@ -36,11 +36,18 @@ title: Mi Blog
 ## PRÁCTICA 2: 3D Reconstruction
 <img src="{{ '/3d_reconstruction.png' | relative_url }}" alt="Imagen de la práctica 2" style="width: 200px; height: auto;">
 
+<details>
+<summary><strong>Ver entradas P2</strong></summary>
+
+<ul>
 {% for post in site.posts reversed %}
   {% if post.tags contains "practica2" %}
-- [{{ post.title }}]({{ post.url | relative_url }})
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   {% endif %}
 {% endfor %}
+</ul>
+
+</details>
 
 {% include footer.html %}
 
