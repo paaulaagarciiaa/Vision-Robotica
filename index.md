@@ -18,12 +18,19 @@ title: Mi Blog
 ## PRÁCTICA 1: Visual Follow Line
 <img src="{{ '/f1.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 200px; height: auto;">
 
+{% for post in site.posts reversed %}
+  {% if post.tags contains "practica1" %}
+- [{{ post.title }}]({{ post.url | relative_url }})
+  {% endif %}
+{% endfor %}
+
 ## PRÁCTICA 2: 3D Reconstruction
 <img src="{{ '/3d_reconstruction.png' | relative_url }}" alt="Imagen de la práctica 2" style="width: 200px; height: auto;">
 
-
 {% for post in site.posts reversed %}
+  {% if post.tags contains "practica2" %}
 - [{{ post.title }}]({{ post.url | relative_url }})
+  {% endif %}
 {% endfor %}
 
 {% include footer.html %}
