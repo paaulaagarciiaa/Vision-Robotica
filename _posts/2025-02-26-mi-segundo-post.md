@@ -2,6 +2,7 @@
 title: "DÍA 2"
 date: 2025-02-26
 categories: blog
+tags: [practica1]
 ---
 
 El objetivo de esta versión era que el coche holonómico completase el recorrido sin fallos, intentando también reducir el tiempo de vuelta.
