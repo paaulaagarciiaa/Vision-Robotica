@@ -2,6 +2,7 @@
 title: "DÍA 6"
 date: 2025-03-03
 categories: blog
+tags: [practica1]
 ---
 
 Mi último objetivo era reducir el tiempo que tarda el coche Ackermann en completar el circuito simple, ya que en la versión del día anterior conseguía dar la vuelta, pero en 3 minutos, un tiempo demasiado alto. He probado diferentes ajustes en los parámetros para hacerlo más rápido, pero al subir la velocidad o modificar el PID, el coche empezaba a oscilar demasiado y acababa chocándose.
