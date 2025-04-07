@@ -19,7 +19,7 @@ title: Mi Blog
 <img src="{{ '/f1.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 200px; height: auto;">
 
 
-<details>
+<details style="margin-bottom: 30px;">
 <summary><strong>Ver entradas P1</strong></summary>
 
 <ul>
