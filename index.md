@@ -49,6 +49,4 @@ title: Mi Blog
 
 </details>
 
-{% include footer.html %}
-
 
