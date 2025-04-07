@@ -2,6 +2,7 @@
 title: "DÍA 4"
 date: 2025-03-01
 categories: blog
+tags: [practica1]
 ---
 
 Una vez conseguí que el coche completara el circuito en 40 segundos, cambié al circuito simple con el coche Ackermann, algunas de las diferencias respecto al coche holonómico son que este no puede girar sobre su eje, necesita moverse para cambiar de dirección y su capacidad de giro está limitada por su radio de giro, haciéndolo más estable en curvas y menos en rectas.
