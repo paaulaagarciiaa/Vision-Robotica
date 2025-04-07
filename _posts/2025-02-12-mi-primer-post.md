@@ -2,6 +2,7 @@
 title: "DÍA 1"
 date: 2025-02-25
 categories: blog
+tags: [practica1]
 ---
 
 Para esta práctica, el coche de Fórmula 1 debe recorrer un circuito siguiendo una línea roja, empezaré con un coche holonómico, y cuando tenga este controlado, pasaré a un coche ackermann.
