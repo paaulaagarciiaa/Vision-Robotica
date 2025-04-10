@@ -35,10 +35,12 @@ title: Mi Blog
 
 
 ## PRÁCTICA 2: 3D Reconstruction
-<img src="{{ '/3d_reconstruction.png' | relative_url }}" alt="Imagen de la práctica 2" style="width: 200px; height: auto;">
 
 <details>
 <summary><strong>Ver entradas P2</strong></summary>
+<img src="{{ '/3d_reconstruction.png' | relative_url }}" alt="Imagen de la práctica 2" style="width: 200px; height: auto;">
+
+
 
 <ul>
 {% for post in site.posts reversed %}
