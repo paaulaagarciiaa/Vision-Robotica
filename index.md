@@ -16,11 +16,12 @@ title: Mi Blog
 </table>
 
 ## PRÁCTICA 1: Visual Follow Line
-<img src="{{ '/f1.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 200px; height: auto;">
-
 
 <details style="margin-bottom: 30px;">
 <summary><strong>Ver entradas P1</strong></summary>
+<img src="{{ '/f1.png' | relative_url }}" alt="Imagen de la práctica 1" style="width: 200px; height: auto;">
+
+
 
 <ul>
 {% for post in site.posts reversed %}
