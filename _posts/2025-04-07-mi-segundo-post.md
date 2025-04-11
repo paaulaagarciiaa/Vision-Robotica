@@ -15,7 +15,7 @@ Ahora bien, no me interesan todos esos puntos, sino únicamente aquellos que cae
 <img src="{{ '/imagenes/candidatos.png' | relative_url }}" alt="candidatos" width="600">
 <p><em>Figura 1: Línea epipolar y puntos candidatos sobre bordes en la imagen derecha.</em></p>
 
-Una vez encontrado el matching, lo visualizo dibujando el punto izquierdo en verde, el derecho en azul y una línea amarilla que los conecta (ver Figura 2). 
+Una vez encontrado el matching, lo visualizo marcando el punto izquierdo en verde, el derecho en azul, y dibujo una línea amarilla entre ellos con cv2.line para representar la correspondencia encontrada (ver Figura 2).
 
 <img src="{{ '/imagenes/matching.png' | relative_url }}" alt="matching" width="600">
 <p><em>Figura 2: Matching visual entre puntos homólogos con línea de conexión.</em></p>
