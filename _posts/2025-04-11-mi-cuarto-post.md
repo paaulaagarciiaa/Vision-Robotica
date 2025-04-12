@@ -6,8 +6,9 @@ tags: [practica2]
 ---
 
 ### Resultado final P2 3D Reconstruction
-<iframe width="560" height="315" src="https://youtu.be/embed/_n2owitwYAY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_n2owitwYAY" frameborder="0" allowfullscreen></iframe>
 <p><em>Figura 1: Visualización final reconstrucción 3D.</em></p>
+
 
 
 
