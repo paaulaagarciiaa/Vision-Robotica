@@ -16,12 +16,12 @@ Ambos vectores se normalizaron y se planteó un sistema lineal con tres ecuacion
 
 Para facilitar su visualización en el visor 3D, escalé el punto triangulado, ya que sus coordenadas eran muy grandes. Además, representé visualmente los rayos desde ambas cámaras hasta el punto, lo cual me sirvió para verificar que la triangulación era coherente (ver Figura 2).
 
-<img src="{{ '/imagenes/rayos.png' | relative_url }}" alt="rayos" width="600">
+<img src="{{ '/imagenes/rayos.png' | relative_url }}" alt="rayos" width="400">
 <p><em>Figura 2:.</em></p>
 
 Una vez validado el proceso, lo extendí al conjunto completo de puntos de interés, aunque inicialmente todos los puntos se mostraban con el mismo color (negro), y el ruido visual era notable, sin llegar a reconocer la estructura de la reconstrucción 3D (ver Figura 3).
 
-<img src="{{ '/imagenes/puntosnegros.png' | relative_url }}" alt=" puntosnegros " width="600">
+<img src="{{ '/imagenes/puntosnegros.png' | relative_url }}" alt=" puntosnegros " width="400">
 <p><em>Figura 3: Representación 3D puntos de color negro.</em></p>
 
 
