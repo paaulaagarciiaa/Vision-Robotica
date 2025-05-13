@@ -53,3 +53,22 @@ title: Mi Blog
 </details>
 
 
+## PRÁCTICA 3: Marker Visual Localization
+
+<details>
+<summary><strong>Ver entradas P3</strong></summary>
+<img src="{{ 'imagenes/p3.png' | relative_url }}" alt="Imagen de la práctica 3" style="width: 200px; height: auto;">
+
+
+
+<ul>
+{% for post in site.posts reversed %}
+  {% if post.tags contains "practica3" %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+</details>
+
+
