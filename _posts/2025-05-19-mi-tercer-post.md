@@ -19,3 +19,5 @@ El sistema se comporta entonces de la siguiente forma:
 Con este sistema, el robot puede seguir actualizando su posición estimada aunque momentáneamente no vea ninguna etiqueta, lo que evita que se quede "parado" desde el punto de vista de la estimación. Esto se puede ver en la simulación, donde el robot rojo sigue moviéndose y actualizando su trayectoria incluso cuando no hay detecciones visuales (ver Figura 1).
 
 ### Resultado final Práctica 3 Marker Based Visual Loc
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mr5Xb_8Q6Hg" frameborder="0" allowfullscreen></iframe>
+<p><em>Figura 1: Resultado final.</em></p>
