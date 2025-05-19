@@ -9,7 +9,7 @@ El objetivo de esta práctica es conseguir que el robot sea capaz de estimar su 
 
 Lo primero que hice fue visualizar las imágenes que recibe la cámara del robot mediante HAL.getImage(), y a partir de ahí convertirlas a escala de grises con cv2.cvtColor para facilitar la detección de las etiquetas. Utilicé el detector de AprilTags (pyapriltags.Detector) para localizar los marcadores en la imagen, y dibujé sus esquinas con líneas verdes y su centro con un círculo rojo (ver Figura 1).
 
-<img src="{{ '/imagenes/apriltag.png' | relative_url }}" alt="apriltag" width="600">
+<img src="{{ '/imagenes/apriltag.png' | relative_url }}" alt="apriltag" width="700">
 <p><em>Figura 1: Visualización de un AprilTag detectado en la imagen.</em></p>
 
 También definí la matriz de calibración intrínseca de la cámara a partir del tamaño de la imagen. Esta matriz es esencial para poder aplicar solvePnP, ya que relaciona las coordenadas 3D del mundo con los píxeles de la imagen. Asumimos que la cámara no tiene distorsión, por lo que los coeficientes de distorsión se fijaron a cero.
