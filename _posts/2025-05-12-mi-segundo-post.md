@@ -39,5 +39,5 @@ Este ajuste compensa la orientación del eje frontal del robot respecto al marco
 
 Se puede ver el resultado de la autolocalización en la Figura 1.
 
-<img src="{{ '/imagenes/autolocalizacion2.png' | relative_url }}" alt="autolocalizacion.png" width="600">
+<img src="{{ '/imagenes/autolocalizacion2.png' | relative_url }}" alt="autolocalizacion" width="600">
 <p><em>Figura 1: Visualización de la autolocalización del robot.</em></p>
