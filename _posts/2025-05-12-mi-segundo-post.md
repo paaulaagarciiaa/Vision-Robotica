@@ -37,7 +37,15 @@ yaw = atan2(rot[1, 0], rot[0, 0]) + π/2
 
 Este ajuste compensa la orientación del eje frontal del robot respecto al marco del mundo.
 
-Se puede ver el resultado de la autolocalización en la Figura 1.
+Inicialmente, se utilizó una matriz de intrínsecos generada a partir del tamaño de la imagen (`f = ancho`, `c<sub>x</sub> = ancho/2`, `c<sub>y</sub> = alto/2`), pero esta aproximación provocaba que el robot se relocalizara ligeramente desplazado hacia la derecha respecto a su posición real (ver Figura 1). Para resolverlo, se obtuvo la matriz real de calibración accediendo al tópico correspondiente en ROS2:
 
-<img src="{{ '/imagenes/autolocalizacion2.png' | relative_url }}" alt="autolocalizacion" width="600">
-<p><em>Figura 1: Visualización de la autolocalización del robot.</em></p>
+```bash
+$ ros2 topic echo /camera_info
+
+Se puede ver el resultado final de la autolocalización en la Figura 2.
+
+<img src="{{ '/imagenes/autolocalizacion.png' | relative_url }}" alt="autolocalizacion" width="600">
+<p><em>Figura 1: Visualización de la autolocalización del robot inicial.</em></p>
+
+<img src="{{ '/imagenes/autolocalizacion2.png' | relative_url }}" alt="autolocalizacion2" width="600">
+<p><em>Figura 2: Visualización de la autolocalización del robot.</em></p>
